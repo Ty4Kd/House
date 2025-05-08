@@ -67,11 +67,10 @@ body {
 
 .hero .container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
-}
+    flex-wrap: wrap;
+  }
 
 .hero-content {
     max-width: 500px;
