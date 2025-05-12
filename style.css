@@ -306,7 +306,7 @@ body {
     color: white;
   }
 
-  .about-new {
+  .about_us-new {
     background-image: url('images/pic_background.jpg');
     background-size: cover;
     background-position: center;
@@ -314,19 +314,19 @@ body {
     padding: 100px 40px;
   }
   
-  .about-content {
+  .about_us-content {
     max-width: 540px;
     margin-left: 165px;
   }
   
-  .about-title {
+  .about_us-title {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-bottom: 30px;
   }
   
-  .about-title h2 {
+  .about_us-title h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 40px;
@@ -334,7 +334,7 @@ body {
     margin: 0;
   }
   
-  .about-content p {
+  .about_us-content p {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -342,7 +342,7 @@ body {
     margin-bottom: 40px;
   }
   
-  .about-icon {
+  .about_us-icon {
     width: 80px;
     height: 80px;
   }
