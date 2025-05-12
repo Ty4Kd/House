@@ -232,7 +232,9 @@ body {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
-}
+    display: flex;
+    flex-direction: column;
+  }
 
 .project-card:hover {
     transform: translateY(-5px);
@@ -242,10 +244,61 @@ body {
     width: 100%;
     height: auto;
     display: block;
-}
+  }
 
 .project-card h3 {
     font-size: 20px;
     margin: 20px;
     color: #333;
 }
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .card-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2C2D35;
+  }
+  
+  .card-content .author {
+    color: #86928B;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content .desc {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #598D66;
+  }
+  
+  .btn-cart {
+    padding: 10px 20px;
+    border: 1px solid #598D66;
+    background-color: transparent;
+    color: #598D66;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-cart:hover {
+    background-color: #598D66;
+    color: white;
+  }
