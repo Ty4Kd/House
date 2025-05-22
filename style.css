@@ -1,199 +1,579 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <header class="site-header">
-        <div class="header-wrapper">
-          <div class="container header-container">
-            <div class="logo">
-                <a href="https://ty4kd.github.io/House/">
-                <img src="images/logo.png" alt="Логотип">
-                <span>Ink. House</span>
-                </a> 
-            </div>
-            <div class="container-nav-cart-link">
-            <nav class="navigation">
-              <ul>
-                    <li><a href="#">Репродукции</a></li>
-                    <li><a href="#">Новинки</a></li>
-                    <li><a href="#">О нас</a></li>
-                </ul>
-                </nav>
-                <a href="#" class="cart-link">
-                    <img src="images/Frame 217.svg" alt="Корзина">
-                </a>
-            </div>
-          </div>
-        </div>
-      </header>
 
-    <section class="hero">
-        <div class="container">
-          <div class="hero-image">
-            <img src="images/hero.png" alt="Дом">
-          </div>
-          <div class="hero-content">
-            <h1>Реплики картин от <a href="https://ty4kd.github.io/House/" class="hero-ink"><span>Ink. House</span></a></h1>
-            <p>Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
-            <a href="#" class="btn">Продукция</a>
-          </div>
-        </div>
-      </section>
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    padding: 0;
+    color: #2c2d35;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
 
-      <section class="projects">
-        <div class="container">
-          <h2 class="section-title">Репродукции</h2>
-          <nav class="project-nav">
-            <button class="nav-btn active">Франция</button>
-            <button class="nav-btn">Германия</button>
-            <button class="nav-btn">Англия</button>
-          </nav>
-        </div>
-        <div class="container">
-          <div class="project-grid">
-            <div class="project-card">
-              <img src="images/projects1.jpg" alt="Охота Амура">
-              <p class="author">Марсель Руссо</p>
-              <h3 class="title">Охота Амура</h3>
-              <p class="description">Холст, масло (50х80)</p>
-              <p class="price">14 500 руб</p>
-              <button class="btn add-to-cart">В корзину</button>
-            </div>
-            <div class="project-card">
-              <img src="images/projects2.jpg" alt="Дама с собачкой">
-              <p class="author">Алиса Ромэ</p>
-              <h3 class="title">Дама с собачкой</h3>
-              <p class="description">Акрил, бумага (40х60)</p>
-              <p class="price">9 900 руб</p>
-              <button class="btn add-to-cart">В корзину</button>
-            </div>
-            <div class="project-card">
-              <img src="images/projects3.jpg" alt="Процедура">
-              <p class="author">Луи Делакруа</p>
-              <h3 class="title">Процедура</h3>
-              <p class="description">Холст, масло (60х90)</p>
-              <p class="price">12 000 руб</p>
-              <button class="btn add-to-cart">В корзину</button>
-            </div>
-            <div class="project-card">
-              <img src="images/projects4.jpg" alt="Охота Амура">
-              <p class="author">Луи Детуш</p>
-              <h3 class="title">Роза</h3>
-              <p class="description">Бумага, акрил (50х80)</p>
-              <p class="price">12 000 руб</p>
-              <button class="btn add-to-cart">В корзину</button>
-            </div>
-            <div class="project-card">
-              <img src="images/projects5.jpg" alt="Дама с собачкой">
-              <p class="author">Франсуа Дюпон</p>
-              <h3 class="title">Птичья трапеза</h3>
-              <p class="description">Цветная литография (40х60)</p>
-              <p class="price">22 500 руб</p>
-              <button class="btn add-to-cart">В корзину</button>
-            </div>
-            <div class="project-card">
-              <img src="images/projects6.jpg" alt="Процедура">
-              <p class="author">Пьер Моранж</p>
-              <h3 class="title">Пейзаж с рыбой</h3>
-              <p class="description">Цветная литография (40х60)</p>
-              <p class="price">20 000 руб</p>
-              <button class="btn add-to-cart">В корзину</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-    <section class="about_us-new">
-        <div class="about_us-content">
-          <div class="about_us-title">
-            <img src="images/star 2.png" alt="Звезда" class="about_us-icon">
-            <h2>Новая коллекция французских авторов</h2>
-          </div>
-          <p>
-            Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.
-            <br><br>
-            Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.
-          </p>
-          <a href="#" class="yellow-btn">Ознакомиться</a>
-        </div>
-      </section>
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-      <section class="authors-section">
-        <div class="container authors-container">
-          <div class="authors-image">
-            <img src="images/author.png" alt="Французский автор">
-          </div>
-          <div class="authors-content">
-            <h2>Наша команда</h2>
-            <p>
-                Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.
-            </p>
-            <div class="author-icons">
-              <img src="images/author1.png" alt="Автор 1">
-              <img src="images/author2.png" alt="Автор 2">
-              <img src="images/author3.png" alt="Автор 3">
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <footer class="footer">
-        <div class="footer__content">
-          <div class="footer__logo-block">
-            <div class="logo">
-            <a href="https://ty4kd.github.io/House/">
-                <img src="images/logo.png" alt="Логотип">
-                <span>Ink. House</span>
-                </a> 
-            </div>
-            <div class="footer__contact">
-              <p class="footer__phone">+7 (999) 543-54-54</p>
-              <p class="footer__label">Мастерская</p>
-            </div>
-          </div>
-      
-          <!-- Навигационные блоки -->
-          <div class="footer__nav">
-            <div class="footer__column">
-              <p class="footer__title">Репродукции</p>
-              <p class="footer__item">Франция</p>
-              <p class="footer__item">Германия</p>
-              <p class="footer__item">Англия</p>
-            </div>
-            <div class="footer__column">
-              <p class="footer__title">Новинки</p>
-              <p class="footer__item">2021</p>
-              <p class="footer__item">2020</p>
-            </div>
-            <div class="footer__column">
-              <p class="footer__title">О нас</p>
-              <p class="footer__item">Художники</p>
-              <p class="footer__item">Менеджеры</p>
-            </div>
-          </div>
-      
-          <!-- Социальные сети -->
-          <div class="footer__social">
-            <div class="footer__icons">
-              <img src="images/facebook.svg" alt="Facebook" class="footer__icon">
-              <img src="images/instagram.svg" alt="Instagram" class="footer__icon">
-              <img src="images/youtube.svg" alt="YouTube" class="footer__icon">
-            </div>
-            <div class="footer__copyright">
-              <p>Ink. House ®</p>
-              <p>All rights reserved</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    
-</body>
-</html>
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #598D66;
+    gap: 10px;
+  }
+  
+.logo img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; 
+    gap: 10px;
+}
+
+.container-nav-cart-link {
+    display: flex;
+    gap: 70px;
+}
+  
+.navigation ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+.navigation a {
+    text-decoration: none;
+    color: #2C2D35;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #598D66;
+}
+
+.cart-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: 1px solid #598D66;
+    background-color: transparent;
+    color: #598D66;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn img {
+    height: 24px;
+    width: 24px;
+  }
+
+.btn:hover {
+    background-color: #598D66;
+    color: white;
+}
+
+.header-bg {
+    background-color: #E1EDE6;
+    width: 100%;
+    height: 100px;
+}
+
+.header-wrapper {
+    background-color: #E1EDE6;
+    height: 100px;
+    width: 100%;
+}
+
+.site-header {
+    background-color: #E1EDE6;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+  
+.site-header .container {
+    width: 1140px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.hero {
+    padding: 80px 40px;
+    background-color: #f5f5f5;
+  }
+
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+.hero-content {
+    max-width: 500px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero-ink {
+    color: #598D66;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.hero-content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: 500;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero-image img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+
+.projects {
+    padding: 80px 40px;
+    background-color: #f5f5f5;
+}
+
+.projects h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    width: 255px;
+    height: 44px;
+}
+
+.section-title {
+    font-weight: 500;
+    color: #2C2D35;
+}
+
+.project-nav {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.project-nav button {
+    width: 126px;
+    height: 43px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-nav button.active {
+    background-color: #376B44;
+    color: white;
+}
+
+.project-nav button:hover {
+    background-color: #376B44;
+    color: white;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    width: 1110px;
+    margin-top: 40px;
+}
+
+.project-card {
+    width: 350px;
+    height: 730px;
+    background-color: #E1EDE6;
+    position: relative;
+    padding: 20px;
+}
+
+.project-card img {
+    width: 310px;
+    height: 422px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+}
+
+.project-card .author {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+    color: #86928B;
+}
+
+.project-card p.description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.project-card p.price {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    width: 310px;
+    height: 65px;
+    padding: 20px 60px;
+    border: 1px solid #598D66;
+    background-color: transparent;
+    color: #598D66;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #598D66;
+    color: white;
+}
+
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .card-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2C2D35;
+  }
+  
+  .card-content .author {
+    color: #86928B;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content .desc {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #598D66;
+  }
+  
+  .btn-cart {
+    padding: 10px 20px;
+    border: 1px solid #598D66;
+    background-color: transparent;
+    color: #598D66;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-cart:hover {
+    background-color: #598D66;
+    color: white;
+  }
+
+  .about_us-new {
+    background-image: url('images/pic_background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 40px;
+  }
+  
+  .about_us-content {
+    max-width: 540px;
+    margin-left: 165px;
+  }
+  
+  .about_us-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .about_us-title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    margin: 0;
+  }
+  
+  .about_us-content p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+  
+  .about_us-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .yellow-btn {
+    display: inline-block;
+  background-color: #eedb6d; 
+  color: #2C2D35;
+  padding: 20px 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  }
+  
+  .yellow-btn:hover {
+    background-color: #d5c459;
+    color: #1a1a1a;
+  }
+  
+  .authors-section {
+    padding: 80px 40px;
+    background-color: #fff;
+  }
+  
+  .authors-container {
+    display: flex;
+    max-width: 1110px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  
+  .authors-image img {
+    width: 445px;
+    height: 440px;
+    object-fit: cover;
+  }
+  
+  .authors-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 635px;
+    gap: 20px;
+  }
+  
+  .authors-content h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    margin: 0;
+  }
+  
+  .authors-content p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+  }
+  
+  .author-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .author-icons img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .footer {
+    width: 100%;
+    height: 168px;
+    background-color: #E1EDE6; /* или ваш цвет */
+    padding: 23px 165px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* Левая колонка */
+  .footer__logo-block {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+  
+  .footer__logo {
+    width: 143px;
+    height: 35px;
+  }
+  
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .footer__phone {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    margin: 0;
+  }
+  
+  .footer__label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin: 0;
+  }
+  
+  /* Центр: навигация */
+  .footer__nav {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .footer__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    margin: 0 0 6px 0;
+    color: #2C2D35;
+  }
+  
+  .footer__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+    color: #86928B;
+  }
+  
+  /* Правая часть: соцсети */
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer__icons {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .footer__icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer__copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  
