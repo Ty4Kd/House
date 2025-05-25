@@ -177,6 +177,7 @@ body {
 .projects {
     padding: 80px 40px;
     background-color: #f5f5f5;
+    
 }
 
 .projects h2 {
@@ -212,6 +213,8 @@ body {
     letter-spacing: 0%;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border: 0;
+    background-color: #D4E8D9;
 }
 
 .project-nav button.active {
