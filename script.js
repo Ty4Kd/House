@@ -29,20 +29,16 @@ const artData = {
     const items = artData[country];
   
     projectsContainer.innerHTML = items.map(item => `
-    <div class="container">
-    <div class="project-grid">
-    <div class="project-card">
-                <img src="${item.img}" ${item.alt}> 
-                <p class="author"> ${item.author}</p>
-                <h3 class="title"> ${item.title}</h3>
-                <p class="description"> ${item.medium}</p>
-                <p class="price"> ${item.price} руб</p>
-                <button class="btn add-to-cart">В корзину</button>
-      </div>
-      </div>
-      </div>
+        <div class="project-card">
+            <img src="${item.img}" ${item.alt}> 
+            <p class="author">${item.author}</p>
+            <h3 class="title">${item.title}</h3>
+            <p class="description">${item.medium}</p>
+            <p class="price">${item.price} руб</p>
+            <button class="btn add-to-cart">В корзину</button>
+        </div>
     `).join('');
-  }
+}
   const buttons = document.querySelectorAll('.filter-btn');
 
   buttons.forEach(btn => {
