@@ -227,30 +227,6 @@ body {
     color: white;
 }
 
-.project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
-    width: 1110px;
-    margin-top: 40px;
-}
-
-.project-card {
-    width: 350px;
-    height: 730px;
-    background-color: #E1EDE6;
-    position: relative;
-    padding: 20px;
-}
-
-.project-card img {
-    width: 310px;
-    height: 422px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
 .project-card h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -310,6 +286,30 @@ body {
     color: white;
 }
 
+.projects-center {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    width: 1110px;
+    margin-top: 40px;
+    margin-left: 128px;
+}
+
+.project-card {
+    width: 350px; 
+    height: 730px;
+    background-color: #E1EDE6;
+    position: relative;
+    padding: 20px;
+}
+
+.project-card img {
+    width: 310px;
+    height: 422px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
 
 .card-content {
     padding: 20px;
